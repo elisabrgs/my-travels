@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Travel from "./Travel";
-import porto from "./Porto.JPG";
-import seville from "./Seville.JPG";
+import Travels from "./Travels";
 
 
 class App extends Component {
@@ -14,21 +12,23 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Mes voyages</h1>
         </header>
-        <Travel
-          destination="Porto"
-          country="Portugal"
-          photo={porto}
-          distance="1498"
-        />
-        <Travel
-          destination="Séville"
-          country="Espagne"
-          photo={seville}
-          distance="1674"
-        />
+        <Travels/>
       </div>
     );
   }
 }
 
 export default App;
+
+/* <Travel
+  destination="Porto"
+  country="Portugal"
+  photo={porto}
+  distance="1498"
+/>
+<Travel
+  destination="Séville"
+  country="Espagne"
+  photo={seville}
+  distance="1674"
+/> */
